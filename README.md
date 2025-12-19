@@ -1,13 +1,15 @@
 # 📦 API de Gestão de Vendas
+--
 📌 Descrição do Projeto
-Este projeto consiste no desenvolvimento de uma API RESTful para gestão de clientes, empresas, vendedores e vendas, seguindo boas práticas de arquitetura backend, validação de dados e padronização de respostas HTTP.
+Este projeto consiste no desenvolvimento de uma API RESTful para gestão de clientes, empresas, vendedores e vendas, seguindo boas práticas de backend, validação de dados e padronização de respostas HTTP.
 
-O objetivo principal é implementar um CRUD completo, com relacionamentos entre entidades e persistência de dados em banco de dados relacional.
+O objetivo principal é implementar um CRUD completo, com relacionamentos entre entidades e persistência de dados.
 
-## 🎯 Objetivo do Desafio
+--
+🎯 Objetivo do Desafio
 Desafio 1 – Backend Básico (CRUD estruturado)
 
-Criar uma API REST que permita:
+A API permite:
 
 Gerir clientes
 
@@ -21,31 +23,23 @@ Garantir relacionamentos corretos entre as entidades
 
 Retornar respostas padronizadas e bem estruturadas
 
-## 🛠️ Tecnologias Utilizadas
+--
+🛠️ Tecnologias Utilizadas
+
 Node.js
 
 Express.js
 
-MongoDB / Mongoose (ou banco relacional, conforme implementação)
+MongoDB / Mongoose
 
 JWT para autenticação
 
 dotenv para variáveis de ambiente
 
-Nodemon para ambiente de desenvolvimento
+Nodemon para desenvolvimento
 
-## 🛠️ Tecnologias Utilizadas
-Node.js
-
-Express.js
-
-MongoDB / Mongoose (ou banco relacional, conforme implementação)
-
-JWT para autenticação
-
-dotenv para variáveis de ambiente
-
-Nodemon para ambiente de desenvolvimento
+--
+📁 Estrutura do Projeto
 
 src/
 │── controllers/
@@ -58,8 +52,11 @@ src/
 server.js
 .env
 
-## 📚 Entidades e Funcionalidades
+--
+📚 Entidades e Funcionalidades
+
 👤 Cliente
+
 Criar cliente
 
 Listar clientes
@@ -71,6 +68,7 @@ Atualizar cliente
 Eliminar cliente
 
 🏢 Empresa
+
 Criar empresa
 
 Listar empresas
@@ -82,6 +80,7 @@ Atualizar empresa
 Eliminar empresa
 
 🧑‍💼 Vendedor
+
 Criar vendedor
 
 Listar vendedores
@@ -95,6 +94,7 @@ Eliminar vendedor
 Associação a uma empresa
 
 💰 Venda
+
 Criar venda
 
 Listar vendas
@@ -108,37 +108,44 @@ Eliminar venda
 Associação a um cliente e a um vendedor
 
 🔗 Relacionamentos
+
 Empresa → Vendedores
 
 Cliente → Vendas
 
 Vendedor → Vendas
 
-## ✅ Requisitos Atendidos
-✔ CRUD completo para todas as entidades
+--
+✅ Requisitos Atendidos
 
-✔ Relacionamentos entre entidades
+CRUD completo para todas as entidades
 
-✔ Validação de dados na API
+Relacionamentos entre entidades
 
-✔ Persistência de dados em banco de dados
+Validação de dados na API
 
-✔ Uso correto de HTTP Status Codes
+Persistência de dados em banco
 
-✔ Retorno de erros padronizado em JSON
+Uso correto de HTTP Status Codes
 
-## 📊 Funcionalidades Extras
-🔹 Paginação de resultados
+Retorno de erros padronizado em JSON
 
-🔹 Ordenação de registros
+--
+📊 Funcionalidades Extras
 
-🔹 Filtro de vendas por:
+Paginação de resultados
+
+Ordenação de registros
+
+Filtro de vendas por:
 
 Data
 
 Valor da venda
 
-## 📌 Padrão de Respostas da API
+--
+📌 Padrão de Respostas da API
+
 ✅ Sucesso
 {
   "sucesso": true,
@@ -151,14 +158,101 @@ Valor da venda
   "mensagem": "Descrição do erro",
   "erro": "Detalhes técnicos (quando aplicável)"
 }
+--
+📚 Entidades e Funcionalidades
 
-## 🔐 Autenticação
-A API utiliza JWT (JSON Web Token) para proteger rotas sensíveis.
-Rotas protegidas exigem o envio do token no header:
-Authorization: Bearer <token>
+👤 Cliente
 
-## ▶️ Como Executar o Projeto
-Clonar o repositório
+Criar cliente
+
+Listar clientes
+
+Buscar cliente por ID
+
+Atualizar cliente
+
+Eliminar cliente
+
+🏢 Empresa
+
+Criar empresa
+
+Listar empresas
+
+Buscar empresa por ID
+
+Atualizar empresa
+
+Eliminar empresa
+
+🧑‍💼 Vendedor
+
+Criar vendedor
+
+Listar vendedores
+
+Buscar vendedor por ID
+
+Atualizar vendedor
+
+Eliminar vendedor
+
+Associação a uma empresa
+
+💰 Venda
+
+Criar venda
+
+Listar vendas
+
+Buscar venda por ID
+
+Atualizar venda
+
+Eliminar venda
+
+Associação a um cliente e a um vendedor
+
+🔗 Relacionamentos
+
+Empresa → Vendedores
+
+Cliente → Vendas
+
+Vendedor → Vendas
+
+--
+✅ Requisitos Atendidos
+
+CRUD completo para todas as entidades
+
+Relacionamentos entre entidades
+
+Validação de dados na API
+
+Persistência de dados em banco
+
+Uso correto de HTTP Status Codes
+
+Retorno de erros padronizado em JSON
+
+--
+📊 Funcionalidades Extras
+
+Paginação de resultados
+
+Ordenação de registros
+
+Filtro de vendas por:
+
+Data
+
+Valor da venda
+
+--
+📌 Padrão de Respostas da API
+
+✅ Sucesso
  git clone https://github.com/JoelsonPedroMutute/sistema-de-gestao-de-vendas.git
 
  ## Instalar as dependências 
@@ -174,10 +268,12 @@ JWT_SECRET=seu_jwt_secret
 ## Executar o projeto
 npm run dev
 
-## 📍 Endpoint Base
+--
+ 📍 Endpoint Base
 http://localhost:3000/api
 
-# 👨‍💻 Autor
+--
+👨‍💻 Autor
 Joelson Mutute
 Projeto desenvolvido como desafio prático de Backend (Node.js / API REST).
 
