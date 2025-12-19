@@ -1,11 +1,3 @@
-import dotenv from "dotenv";
-
-dotenv.config();
-
-export const env = {
-  port: process.env.PORT,
-  mongoUri: process.env.MONGO_URI,
-  nodeEnv: process.env.NODE_ENV
-};
-
-export default env;
+PORT=3000
+MONGO_URI=mongodb://127.0.0.1:27017/sistema-de-gestao-de-vendas
+NODE_ENV=development
