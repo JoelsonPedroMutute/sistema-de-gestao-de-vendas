@@ -39,20 +39,6 @@ dotenv para variáveis de ambiente
 Nodemon para desenvolvimento
 
 --
-📁 Estrutura do Projeto
-
-src/
-│── controllers/
-│── services/
-│── routes/
-│── models/
-│── middlewares/
-│── database/
-│── app.js
-server.js
-.env
-
---
 📚 Entidades e Funcionalidades
 
 👤 Cliente
@@ -152,7 +138,8 @@ Valor da venda
   "mensagem": "Operação realizada com sucesso",
   "dados": {}
 }
-### ❌ Erro
+--
+ ❌ Erro
 {
   "sucesso": false,
   "mensagem": "Descrição do erro",
