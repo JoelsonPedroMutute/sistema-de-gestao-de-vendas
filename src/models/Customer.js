@@ -27,7 +27,6 @@ const CustomerSchema = new mongoose.Schema(
   },
   {
     versionKey: false,
-    timestamps: true //
   }
 );
 

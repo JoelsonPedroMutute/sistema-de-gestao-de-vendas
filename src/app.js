@@ -12,4 +12,8 @@ app.use(express.json());
 app.use('/auth', authRoutes);
 
 app.use('/api/companies', require('./routes/company.routes'));
+app.use('/api/customers', require('./routes/customer.routes'));
+app.use('/api/sellers', require('./routes/seller.routes'));
+app.use('/api/sales', require('./routes/sale.routes'));
+app.use('/api/users', require('./routes/user.routes'));
 module.exports = app;

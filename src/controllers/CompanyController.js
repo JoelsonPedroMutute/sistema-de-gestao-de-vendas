@@ -14,7 +14,6 @@ class CompanyController {
 
     } catch (error) {
 
-      // 🔴 ERRO DE CAMPO DUPLICADO (MongoDB)
       if (error.code === 11000) {
         const campo = Object.keys(error.keyValue)[0];
 
@@ -24,7 +23,6 @@ class CompanyController {
         });
       }
 
-      // 🔴 ERRO GENÉRICO
       return res.status(400).json({
         sucesso: false,
         mensagem: 'Erro ao criar a empresa'
