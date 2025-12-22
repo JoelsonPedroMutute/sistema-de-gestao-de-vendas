@@ -16,4 +16,11 @@ app.use('/api/customers', require('./routes/customer.routes'));
 app.use('/api/sellers', require('./routes/seller.routes'));
 app.use('/api/sales', require('./routes/sale.routes'));
 app.use('/api/users', require('./routes/user.routes'));
+
+app.get('/', (req, res) => {
+  res.json({
+    message: 'API Sistema de Gestão de Vendas está online 🚀'
+  });
+});
+
 module.exports = app;
